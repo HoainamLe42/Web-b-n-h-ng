@@ -4,6 +4,7 @@ import { HeaderOnly } from '~/layout';
 import Home from '~/pages/Home';
 import Profile from '~/pages/Profile';
 import Cart from '~/pages/Cart';
+import Login from '~/pages/Login';
 
 const publicRoutes = [
     {
@@ -20,6 +21,12 @@ const publicRoutes = [
         path: '/cart',
         component: Cart,
         layout: null,
+    },
+
+    {
+        path: '/login',
+        component: Login,
+        layout: HeaderOnly,
     },
 ];
 
