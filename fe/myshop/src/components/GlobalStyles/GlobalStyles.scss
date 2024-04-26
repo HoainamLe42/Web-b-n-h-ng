@@ -1,11 +1,16 @@
 @import 'normalize.css';
+@import 'sass/base/index';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
 
 :root {
-    --primary: #ccc;
+    --primary: #27ae60;
+    --color-black: #000;
+    --color-grey: #ccc;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -18,4 +23,13 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
